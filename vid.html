@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sri Sabarish">
+    <meta name="about-us" content="im an freelancing web developer">
+    <link rel="stylesheet" href="vid.css">
+    <title>VIDEO Player</title>
+</head>
+<body>
+    <div class="div">
+        <input type="text" width="200px" class="inputsrc">
+        <button class="getbtn">PLAY VIDEO</button>
+    </div>
+    <div class="allcon">
+        <video src=".." class="vid" autoplay></video>
+        <div class="controls">
+            <div class="additional">
+                <div class="additional__progression"></div>
+            </div>
+            <div class="maincon">
+                <button class="play">▶️</button>
+                <label for="volume">VOLUME</label>
+                <input type="range" class="volume" name="volume" min="0" max="1" value="1" step="0.1">
+                <label for="playspeed">PLAYBACK</label>
+                <input type="range" class="playspeed" name="playspeed" min="0" max="4" value="1" step="0.1">
+                <button class="back10" data-skip="-10">10-«</button>
+                <button class="skip15" data-skip="15">15-»</button>
+            </div>
+        </div>
+    </div>
+    <script src="vid.js"></script>
+</body>
+</html>
